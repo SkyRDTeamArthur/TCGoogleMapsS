@@ -171,21 +171,21 @@ static CLLocationDistance const kSearchRadiusInMeters = 15000.0f;
 
 - (void)startLocatingUser
 {
-    // Show progress HUD while we find the user's location.
-    MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
-    progressHUD.dimBackground = YES;
-    progressHUD.labelText = @"Finding My Location";
-    
-    // Make progress HUD consume all touches to disable interaction on
-    // background views.
-    progressHUD.userInteractionEnabled = YES;
+//    // Show progress HUD while we find the user's location.
+//    MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+//    progressHUD.dimBackground = YES;
+//    progressHUD.labelText = @"Finding My Location";
+//    
+//    // Make progress HUD consume all touches to disable interaction on
+//    // background views.
+//    progressHUD.userInteractionEnabled = YES;
     
     // Get the user's current location. Google Places API uses the user's
     // current location to find relevant places.
     [self.userLocationManager startLocatingUserWithCompletion:^(CLLocation *userLocation, NSError *error) {
         if (userLocation) {
             self.myLocation = userLocation;
-            [progressHUD hide:YES];
+//            [progressHUD hide:YES];
             
             // Set focus to the UISearchBar, so that user can start
             // entering their query right away.

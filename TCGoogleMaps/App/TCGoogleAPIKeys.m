@@ -9,5 +9,5 @@
 #import "TCGoogleAPIKeys.h"
 
 // Get your own API keys from http://code.google.com/apis/console‎
-NSString * const kTCGoogleMapsAPIKey = @"AIzaSyD7bKmFkhRWKdAKkASeccZB3D4LrRj0yAY";
-NSString * const kTCGooglePlacesAPIKey = @"AIzaSyBDNqerk86QTl8UV-lz2l5y1vga9OsItq8";
+NSString * const kTCGoogleMapsAPIKey = @"AIzaSyCpJz2ZmGAO7NLyfubTxdI2WZpd2H3CrWI";
+NSString * const kTCGooglePlacesAPIKey = @"AIzaSyCpJz2ZmGAO7NLyfubTxdI2WZpd2H3CrWI";

@@ -16,7 +16,7 @@
 /**
  * The space between the text label and the cell.
  */
-static CGFloat const kCellContentMargin = 20.0f;
+//static CGFloat const kCellContentMargin = 20.0f;
 
 /**
  * The default height of a cell in the table view.
@@ -191,26 +191,26 @@ static CGFloat const kCellDefaultHeight = 80.0f;
 // that will word wrap.
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TCCellModel *cellModel = self.cellModels[indexPath.row];    
+//    TCCellModel *cellModel = self.cellModels[indexPath.row];    
     
     // The actual label's width may differ from the preferred width because
     // of the way the text is layout.
-    CGFloat preferredLabelWidth = tableView.frame.size.width - kCellContentMargin;
+//    CGFloat preferredLabelWidth = tableView.frame.size.width - kCellContentMargin;
     // We want a fixed width for the label. The height can grow as needed.
-    CGSize preferredLabelSize = CGSizeMake(preferredLabelWidth, CGFLOAT_MAX);
+//    CGSize preferredLabelSize = CGSizeMake(preferredLabelWidth, CGFLOAT_MAX);
     
     // The expected size for the cell's text label.
-    CGSize textLabelSize = [cellModel.text sizeWithFont:[UITableViewCell defaultTextLabelFont]
-                                      constrainedToSize:preferredLabelSize
-                                          lineBreakMode:NSLineBreakByWordWrapping];
+//    CGSize textLabelSize = [cellModel.text sizeWithFont:[UITableViewCell defaultTextLabelFont]
+//                                      constrainedToSize:preferredLabelSize
+//                                          lineBreakMode:NSLineBreakByWordWrapping];
 
     // The expected size for the cell's detail text label.
-    CGSize detailTextLabelSize = [cellModel.detailText sizeWithFont:[UITableViewCell defaultDetailTextLabelFont]
-                                                  constrainedToSize:preferredLabelSize
-                                                      lineBreakMode:NSLineBreakByWordWrapping];
+//    CGSize detailTextLabelSize = [cellModel.detailText sizeWithFont:[UITableViewCell defaultDetailTextLabelFont]
+//                                                  constrainedToSize:preferredLabelSize
+//                                                      lineBreakMode:NSLineBreakByWordWrapping];
     
     // Total up the labels heights and margins together to get the cell height.
-    CGFloat cellHeight = textLabelSize.height + detailTextLabelSize.height + kCellContentMargin;
+    CGFloat cellHeight = 20; // textLabelSize.height + detailTextLabelSize.height + kCellContentMargin;
     
     // Make sure that the calculated cell's height is not less than the default
     // minimum height.

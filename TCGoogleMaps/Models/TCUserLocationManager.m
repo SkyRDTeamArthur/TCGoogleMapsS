@@ -36,8 +36,16 @@
     
     self.locationManager.delegate = self;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    
+    // Check for iOS 8. Without this guard the code will crash with "unknown selector" on iOS 7.
+//    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+//        [self.locationManager requestWhenInUseAuthorization];
+//    }
+    
     [self.locationManager startUpdatingLocation];
+    [self.locationManager requestWhenInUseAuthorization]; // Add This Line
 }
+
 
 - (void)stopLocatingUser
 {    
@@ -50,7 +58,7 @@
     CLLocation *newLocation = [locations lastObject];
     
     // We don't want a cached location that is too out of date.
-    NSTimeInterval locationAge = abs([newLocation.timestamp timeIntervalSinceNow]);
+    NSTimeInterval locationAge = fabs([newLocation.timestamp timeIntervalSinceNow]);
     if (locationAge > 15.0f) { return; }
     
     // Horizontal accuracy returns a negative value to indicate that the location's

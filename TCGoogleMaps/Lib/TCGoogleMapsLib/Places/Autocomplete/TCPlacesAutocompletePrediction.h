@@ -16,7 +16,7 @@
 /**
  * Contains the human-readable name for the returned result.
  */
-@property (nonatomic, copy, readonly) NSString *description;
+@property (nonatomic, copy, readonly) NSString *descriptions;
 
 /**
  * A reference that can be used to retrieve details about this place 

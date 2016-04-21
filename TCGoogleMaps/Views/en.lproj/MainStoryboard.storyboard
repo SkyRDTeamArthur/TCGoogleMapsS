@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HL1-3T-KuG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HL1-3T-KuG">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller - Map-->
+        <!--Map-->
         <scene sceneID="5">
             <objects>
                 <viewController storyboardIdentifier="TCMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2" customClass="TCMapViewController" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="437" y="840"/>
         </scene>
-        <!--Steps View Controller - Directions-->
+        <!--Directions-->
         <scene sceneID="0dD-W4-uQE">
             <objects>
                 <tableViewController restorationIdentifier="TCDirectionsViewController" storyboardIdentifier="TCDirectionsViewController" id="KD5-pn-LOd" customClass="TCStepsViewController" sceneMemberID="viewController">
@@ -96,13 +96,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="The instructions for the route's step goes here. This can be a very long text." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="286" id="I33-aA-JAw">
-                                            <rect key="frame" x="15" y="11" width="286" height="41"/>
+                                            <rect key="frame" x="15" y="11" width="284" height="41"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="10 km" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="40" id="nNw-3s-p4k">
-                                            <rect key="frame" x="15" y="52" width="40" height="17"/>
+                                            <rect key="frame" x="15" y="52" width="39" height="17"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -153,7 +153,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Search Result" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Ea-d9-cMM">
-                                                    <rect key="frame" x="15" y="12" width="102" height="20"/>
+                                                    <rect key="frame" x="15" y="12" width="100" height="20"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -242,9 +242,4 @@
     <resources>
         <image name="ic_list.png" width="19" height="19"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

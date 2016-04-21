@@ -18,7 +18,7 @@
     
     self = [super init];
     if (self) {
-        _description = [properties[@"description"] copy];
+        _descriptions = [properties[@"description"] copy];
         _reference = [properties[@"reference"] copy];
         _terms = PredictionTermsFromResponse(properties[@"terms"]);
     }
